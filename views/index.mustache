@@ -12,7 +12,6 @@
       {{#hiddenwordOutput}}
       {{.}}
       {{/hiddenwordOutput}}
-      <!-- {{hiddenwordOutput}} -->
       {{word}}
     </div>
     <div id='makeGuess'>
@@ -23,16 +22,15 @@
       </form>
     </div>
     <div class="guessesLeft">
-      <!-- <p>Letters guessed:{{lettersguessed}} </p> -->
       <p>You have {{guessesLeft}} guesses left</p>
       <p>Letters guessed so far: {{#lettersGuessed}}{{.}}{{/lettersGuessed}}</p>
       {{#alrdyGuessedError}}<p>You have already guessed this letter silly rabbit!</p>{{/alrdyGuessedError}}
       {{#wrong}}<p>Wrong, you are as smart as you look!</p>{{/wrong}}
-      {{toomanyguesses}}
       {{#gameover}}<p>Game over you lose!!!</p>{{/gameover}}
     </div>
     <div>
       <h1>Can you guess the word yet?</h1>
+      {{toomanyguesses}}
       <form action="/finalguess" method="post" id="finalguess">
         <input type="text" name="finalGuess" placeholder="Guess the word!">
         <input type="submit" name="final" value="Final Guess">

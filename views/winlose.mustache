@@ -14,6 +14,7 @@
     {{^chkIfWin}}
       <h1>Game Over</h1>
       <h2>You Lose!</h2>
+      {{toomanyguesses}}
       <h3>Hit restart for another game!</h3>
     {{/chkIfWin}}
     <form action="/restartApp" method="post" id="restart">
