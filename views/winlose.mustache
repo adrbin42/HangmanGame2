@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Restart Game</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    {{#chkIfWin}}
+      <h1>Game Over!</h1>
+      <h2>HOORAY, YOU WON! YOU GOT LUCKY THIS TIME!</h2>
+      <h3>Hit restart for another game!</h3>
+    {{/chkIfWin}}
+    {{^chkIfWin}}
+      <h1>Game Over</h1>
+      <h2>You Lose!</h2>
+      <h3>Hit restart for another game!</h3>
+    {{/chkIfWin}}
+    <form action="/restartApp" method="post" id="restart">
+      <input type="submit" name="restartBtn" value="Restart Game">
+    </form>
+  </body>
+</html>

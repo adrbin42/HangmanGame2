@@ -1,0 +1,35 @@
+{
+  "name": "week-five-project",
+  "version": "1.0.0",
+  "description": "Node and Express word game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrbin42/week5_node_express_game.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Adrienne Bing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrbin42/week5_node_express_game/issues"
+  },
+  "homepage": "https://github.com/adrbin42/week5_node_express_game#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "busboy": "^0.2.14",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "file-system": "^2.2.2",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
+}
